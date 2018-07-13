@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        html,body{
+            height: 100%;overflow: hidden;padding: 0;margin: 0;
+        }
+        .list{
+            position: absolute;
+            z-index: 100;
+        }
+        input{
+            width: 40px;height:38px;
+        }
+        td{
+            position: relative;
+        }
+        .add{
+            position: absolute;
+            top: 2px;
+            right:2px;
+        }
+        .sub{
+            position: absolute;
+            top: 22px;
+            right: 2px;
+        }
+       #box{
+           width: 200px;
+           height: 200px;
+           border: 1px solid black;
+            position: absolute;
+            top: 20px;
+            left: 600px;
+            z-index: 2;
+            display: none;
+       }
+       .que{
+           width: 50px;
+           height: 20px;
+       }
+       .qu{
+          width: 50px;
+           height: 20px;
+       }
+       #fitter{
+           width: 100%;
+           height: 100%;
+           opacity:0.1;
+           background-color: black;
+           display: none;
+           position: absolute;
+          
+       }
+       p{
+          display: block;
+          text-align: center
+       }
+    </style>
+</head>
+<body>
+    <table class="list">
+      <thead>
+        <tr>
+           
+            <th>商品名称</th>
+            <th>价格</th>
+            <th>总价</th>
+            <th>数量</th>
+            <th>操作</th> 
+        </tr>
+      </thead>
+
+    </table>
+    <div id="box">
+        <p class="p">弹出框<p>
+        <button class="que">确定</button>
+        <button class="qu">取消</button>
+     
+    </div>
+    <div id="fitter"></div>
+</body>
+</html>
+<script src="js/ajax.js"></script>
+<script src="js/demo1.js"></script>
